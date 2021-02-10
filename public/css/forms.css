@@ -1,0 +1,8 @@
+/* Hide all steps by default: */
+.hide-tab {
+  display: none !important;
+}
+
+.show-tab {
+  display: block !important;
+}

@@ -1,0 +1,13 @@
+{
+    "name": "task/task1",
+    "type": "project",
+    "description": "First task",
+    "require": {
+        "twig/twig": "^3.0"
+    },
+    "autoload": {
+        "classmap":[
+            "./"
+        ]
+    }
+}

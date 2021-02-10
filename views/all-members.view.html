@@ -1,0 +1,30 @@
+{% extends "partials/base.html" %}
+
+{% block title %}
+    All members
+{% endblock %}
+
+{% block body %}
+<div class="d-flex flex-wrap p-3 justify-content-center">
+  {% for item in data %}
+  <div class="row w-50 px-3 py-5">
+
+    <div class="col text-center p-0">
+      <img style="width: 200px; height: 200px;" class="img-thumbnail" src="{{item['photo']}}">
+    </div>
+
+    <div class="col w-25 p-0">
+      <h4>Name:</h4>
+      <p class="text-center">{{item['firstname']}} {{item['lastname']}}</p>
+
+      <h4>Report subject:</h4>
+      <p class="text-center">{{item['report_subject']}}</p>
+
+      <h4>Email:</h4>
+      <p class="text-center">{{item['email']}}</p>
+    </div>
+    </div>
+
+  {% endfor %}
+</div>
+{% endblock %}
